@@ -1,4 +1,4 @@
 /target/
 /report/
 /test-output/
-/.settings/
+.gitignore
