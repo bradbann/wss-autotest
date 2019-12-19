@@ -28,7 +28,7 @@ public class MyOrderCase {
 	private MyOrderStep myOrderStep;
 	private OrderCancelStep orderCancelStep;
 	
-	@Test(description = "我的订单-撤销订单案例")
+//	@Test(description = "我的订单-撤销订单案例")
 	public void myOrder_orderCancelCase() {
 		
 		loginStep = new LoginStep(driver);

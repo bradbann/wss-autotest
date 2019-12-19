@@ -12,12 +12,12 @@
 
 	<test name="tests">
 		<packages>
-			<!-- <package name="bn.test.smlcs.testCase" /> -->
+			<package name="bn.test.smlcs.testCase" />
 		</packages>
 
 		<classes>
 			<!-- <class name="bn.test.smlcs.testCase.LoginCase"></class> -->
-			<class name="bn.test.smlcs.testCase.HomeCase"></class>
+			<!-- <class name="bn.test.smlcs.testCase.HomeCase"></class> -->
 		</classes>
 	</test>
 

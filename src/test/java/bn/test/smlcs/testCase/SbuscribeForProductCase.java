@@ -11,7 +11,9 @@ import bn.test.smlcs.driver.DriverManager;
 import bn.test.smlcs.step.CustomerDetailStep;
 import bn.test.smlcs.step.HomeStep;
 import bn.test.smlcs.step.LoginStep;
+import bn.test.smlcs.step.MyOrderStep;
 import bn.test.smlcs.step.MySubscribeStep;
+import bn.test.smlcs.step.OrderCancelStep;
 import bn.test.smlcs.step.OrdersFlowStep;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -30,10 +32,12 @@ public class SbuscribeForProductCase {
 	private MySubscribeStep mySubscribeStep;
 	private CustomerDetailStep customerDeailStep;
 	private OrdersFlowStep ordersFlowStep;
+	private MyOrderStep myOrderStep;
+	private OrderCancelStep orderCancelStep;
 	
 	
 	
-	@Test(description="内部下单流程-活期-正向案例")
+	@Test(description="内部下单流程-活期-正向案例",groups = {"buyOrder"})
 	public void testCase2(){
 		loginStep = new LoginStep(driver);
 		homeStep = new HomeStep(driver);
@@ -95,6 +99,28 @@ public class SbuscribeForProductCase {
 		
 	}
 	
+	
+	@Test(description = "我的订单-撤销订单案例",dependsOnMethods = {"testCase2"})
+	public void myOrder_orderCancelCase() {
+		
+		loginStep = new LoginStep(driver);
+		homeStep = new HomeStep(driver);
+		myOrderStep = new MyOrderStep(driver);
+		orderCancelStep = new OrderCancelStep(driver);
+		loginStep.unifyLoginFunction("zhaod002");
+		homeStep.clickMyOrder();
+		myOrderStep.clickSearchBtn();
+		myOrderStep.clickDaiXiuGai();
+		myOrderStep.clickDaiBuLu();
+		myOrderStep.clickShenHeZhong();
+		myOrderStep.clickConfirm();
+		myOrderStep.clickSearchResultFristOne();
+		myOrderStep.clickOrderRevocation();
+		orderCancelStep.inputCause();
+		orderCancelStep.clickConfirmCancel();
+		Assert.assertTrue(orderCancelStep.result());
+		
+	}
 	
 	
 	@BeforeMethod
