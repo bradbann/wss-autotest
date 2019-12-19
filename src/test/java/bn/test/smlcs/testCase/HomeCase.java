@@ -46,7 +46,7 @@ public class HomeCase {
 	}
 
 	
-	@Test(description = "点击我的审批案例",dependsOnMethods="clickDaibanrenwu")
+	@Test(description = "点击我的审批案例")
 	public void myApproval() {
 		
 		loginStep = new LoginStep(driver);
@@ -59,7 +59,7 @@ public class HomeCase {
 	}
 	
 	
-	@Test(description = "点击转发助手案例",dependsOnMethods="clickMyApproval")
+	@Test(description = "点击转发助手案例")
 	public void zhuanFaZhuShou() {
 		
 		loginStep = new LoginStep(driver);
