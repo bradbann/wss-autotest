@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<!--parallel="true" thread-count="1" -->
+<suite name="test-suite" verbose="1">
+
+	<listeners>
+		<listener class-name="bn.test.smlcs.report.ZTestReport" />
+	</listeners>
+
+
+	<test name="tests">
+		<packages>
+			<!-- <package name="bn.test.smlcs.testCase" /> -->
+		</packages>
+
+		<classes>
+			<!-- <class name="bn.test.smlcs.testCase.LoginCase"></class> -->
+			<class name="bn.test.smlcs.testCase.HomeCase"></class>
+		</classes>
+	</test>
+
+</suite>

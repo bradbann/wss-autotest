@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38042" started-at="2019-12-19T06:25:00Z" finished-at="2019-12-19T06:25:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38042" started-at="2019-12-19T06:25:00Z" finished-at="2019-12-19T06:25:38Z">
+      <class name="bn.test.smlcs.testCase.ProvideContractCase">
+        <test-method status="PASS" signature="beforMethod()[pri:0, instance:bn.test.smlcs.testCase.ProvideContractCase@f6c48ac]" name="beforMethod" is-config="true" duration-ms="2762" started-at="2019-12-19T14:25:00Z" finished-at="2019-12-19T14:25:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method status="PASS" signature="provideContractCase1()[pri:1, instance:bn.test.smlcs.testCase.ProvideContractCase@f6c48ac]" name="provideContractCase1" duration-ms="35079" started-at="2019-12-19T14:25:03Z" finished-at="2019-12-19T14:25:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideContractCase1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bn.test.smlcs.testCase.ProvideContractCase@f6c48ac]" name="afterMethod" is-config="true" duration-ms="178" started-at="2019-12-19T14:25:38Z" finished-at="2019-12-19T14:25:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- bn.test.smlcs.testCase.ProvideContractCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
