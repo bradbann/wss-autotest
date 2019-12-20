@@ -27,7 +27,7 @@
 			<class name="bn.test.smlcs.testCase.ProductionCase"></class><!-- 产品tab案例 -->
 			<class name="bn.test.smlcs.testCase.ProductTransformCase"></class><!-- 产品转换案例 -->
 			<class name="bn.test.smlcs.testCase.SbuscribeForProductCase"></class><!-- 认购流程案例 -->
-			<class name="bn.test.smlcs.testCase.ZhuanJieShaoCasee"></class><!-- 转介绍案例 -->
+			<class name="bn.test.smlcs.testCase.ZhuanJieShaoCase"></class><!-- 转介绍案例 -->
 		</classes>
 	</test>
 
