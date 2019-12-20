@@ -31,7 +31,7 @@ public class ProvideContractCase {
 	
 	
 	
-	@Test(priority=1)
+	@Test(description="发放合同案例-正向流程",priority=1)
 	public void provideContractCase1(){
 		ElementOperation operation = new ElementOperation(driver);
 		SimpleDateFormat myFmt1=new SimpleDateFormat("HH"); 

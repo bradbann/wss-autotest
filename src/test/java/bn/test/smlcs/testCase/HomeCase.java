@@ -13,6 +13,7 @@ import bn.test.smlcs.step.HomeStep;
 import bn.test.smlcs.step.LoginStep;
 import bn.test.smlcs.step.MyApprovalStep;
 import bn.test.smlcs.step.RiLiStep;
+import bn.test.smlcs.step.ZhuanFaZhuShouStep;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
@@ -28,6 +29,7 @@ public class HomeCase {
 	private DaiBanRenWuStep daiBanRenWuStep;
 	private MyApprovalStep myApproval;
 	private RiLiStep riLiStep;
+	private ZhuanFaZhuShouStep zhuanFaZhuShouStep;
 
 	@Test(description = "点击待办任务案例")
 	public void clickDaibanrenwu() {
@@ -64,10 +66,10 @@ public class HomeCase {
 		
 		loginStep = new LoginStep(driver);
 		homeStep = new HomeStep(driver);
-		myApproval = new MyApprovalStep(driver);
+		zhuanFaZhuShouStep = new ZhuanFaZhuShouStep(driver);
 		loginStep.unifyLoginFunction("zhaod002");
 		homeStep.clickZhuanfazhushou();
-		myApproval.getTtile();
+		Assert.assertEquals(zhuanFaZhuShouStep.getTitle(), "转发助手");
 
 	}
 	
@@ -77,10 +79,9 @@ public class HomeCase {
 		loginStep = new LoginStep(driver);
 		homeStep = new HomeStep(driver);
 		riLiStep = new RiLiStep(driver);
-		myApproval = new MyApprovalStep(driver);
 		loginStep.unifyLoginFunction("zhaod002");
 		homeStep.clickRili();
-		System.out.println(riLiStep.getTitle());
+		Assert.assertEquals(riLiStep.getTitle(), "我的日历");
 
 	}
 	

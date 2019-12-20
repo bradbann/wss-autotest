@@ -69,7 +69,7 @@ public class SbuscribeForProductCase {
 	
 	
 	
-//	@Test(description="内部下单流程-定期-正向案例")
+	@Test(description="内部下单流程-定期-正向案例")
 	public void testCase1(){
 		loginStep = new LoginStep(driver);
 		homeStep = new HomeStep(driver);
