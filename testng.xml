@@ -11,9 +11,9 @@
 
 
 	<test name="tests">
-		<packages>
-			<!-- <package name="bn.test.smlcs.testCase" /> -->
-		</packages>
+	<!-- 	<packages>
+			<package name="bn.test.smlcs.testCase" />
+		</packages> -->
 
 		<classes>
 			<!-- <class name="bn.test.smlcs.testCase.ProvideContractCase"></class> --><!-- 发放合同案例 -->
