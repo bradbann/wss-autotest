@@ -16,7 +16,7 @@
 		</packages>
 
 		<classes>
-			<class name="bn.test.smlcs.testCase.ProvideContractCase"></class><!-- 发放合同案例 -->
+			<!-- <class name="bn.test.smlcs.testCase.ProvideContractCase"></class> --><!-- 发放合同案例 -->
 			<class name="bn.test.smlcs.testCase.HomeCase"></class><!-- 首页案例 -->
 			<class name="bn.test.smlcs.testCase.DaoQiBianGengCase"></class><!-- 到期协议变更 -->
 			<class name="bn.test.smlcs.testCase.FundPlanCase"></class><!-- 资金计划案例 -->
