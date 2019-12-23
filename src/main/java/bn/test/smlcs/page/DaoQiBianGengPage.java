@@ -100,6 +100,11 @@ public class DaoQiBianGengPage {
 	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeWindow[1]/XCUIElementTypeOther")
 	public List<MobileElement> isDialog;
 	
+	/** 判断是否有确认弹窗,通过获取返回数量判断是否有弹窗，1是没有，2是有弹窗 ,3是加载图标*/
+	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/*")
+	public List<MobileElement> isDialog2;
+	
 	/** 弹窗-确认按钮*/
 	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
 	@iOSXCUITFindBy(accessibility="确认")

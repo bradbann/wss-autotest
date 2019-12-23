@@ -83,9 +83,25 @@ public class DaoQiBianGengStep extends BaseStep {
 	/**点击完成下单*/
 	public void clickFinishOrder(){
 		initElement(daoQiBianGengPage.finishOrder).click();
-		//判断是否有弹窗
+		
+		System.out.println(daoQiBianGengPage.isDialog.size());
+		
+		
 		if (daoQiBianGengPage.isDialog.size() > 1) {
-			initElement(daoQiBianGengPage.confirmBtn).click();
+			//判断是否有加载图标
+			for (int i = 0; i < 8; i++) {
+				if (daoQiBianGengPage.isDialog2.size() > 2) {
+					System.out.println("等等加载图标消失");
+					MobileCommonUtil.sleep(1000);
+				}else{
+					break;
+				}
+				
+			}
+			if (daoQiBianGengPage.isDialog.size() > 1) {
+				initElement(daoQiBianGengPage.confirmBtn).click();
+			}
+			
 		}
 		
 	}
@@ -105,7 +121,7 @@ public class DaoQiBianGengStep extends BaseStep {
 		
 		System.out.println("Y: "+y);
 		System.out.println("x: "+x);
-		y = y+50;
+//		y = y+50;
 		System.out.println("Y: "+y);
 		MobileCommonUtil.tapPoint(driver, x, y);
 //		daoQiBianGengPage.searchField.click();

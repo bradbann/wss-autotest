@@ -11,23 +11,23 @@
 
 
 	<test name="tests">
-	<!-- 	<packages>
-			<package name="bn.test.smlcs.testCase" />
-		</packages> -->
+	    <packages>
+			<!-- <package name="bn.test.smlcs.testCase" /> -->
+		</packages>
 
 		<classes>
-			<!-- <class name="bn.test.smlcs.testCase.ProvideContractCase"></class> --><!-- 发放合同案例 -->
+			<class name="bn.test.smlcs.testCase.ProvideContractCase"></class><!-- 发放合同案例 -->
 			<class name="bn.test.smlcs.testCase.HomeCase"></class><!-- 首页案例 -->
-			<!-- <class name="bn.test.smlcs.testCase.DaoQiBianGengCase"></class>到期协议变更
-			<class name="bn.test.smlcs.testCase.FundPlanCase"></class>资金计划案例
-			<class name="bn.test.smlcs.testCase.HeTongYiJiaoCase"></class>合同移交案例
-			<class name="bn.test.smlcs.testCase.MyApprovalCase"></class>我的审批案例
-			<class name="bn.test.smlcs.testCase.MyRedeemCase"></class>赎回案例
-			<class name="bn.test.smlcs.testCase.PosterShareCase"></class>海报分享案例
-			<class name="bn.test.smlcs.testCase.ProductionCase"></class>产品tab案例
-			<class name="bn.test.smlcs.testCase.ProductTransformCase"></class>产品转换案例
-			<class name="bn.test.smlcs.testCase.SbuscribeForProductCase"></class>认购流程案例
-			<class name="bn.test.smlcs.testCase.ZhuanJieShaoCase"></class> --><!-- 转介绍案例 -->
+			<class name="bn.test.smlcs.testCase.DaoQiBianGengCase"></class><!-- 到期协议变更 -->
+			<class name="bn.test.smlcs.testCase.FundPlanCase"></class><!-- 资金计划案例 -->
+			<class name="bn.test.smlcs.testCase.HeTongYiJiaoCase"></class><!-- 合同移交案例 -->
+			<class name="bn.test.smlcs.testCase.MyApprovalCase"></class><!-- 我的审批案例 -->
+			<class name="bn.test.smlcs.testCase.MyRedeemCase"></class><!-- 赎回案例 -->
+			<class name="bn.test.smlcs.testCase.PosterShareCase"></class><!-- 海报分享案例 -->
+			<class name="bn.test.smlcs.testCase.ProductionCase"></class><!-- 产品tab案例 -->
+			<class name="bn.test.smlcs.testCase.ProductTransformCase"></class><!-- 产品转换案例 -->
+			<class name="bn.test.smlcs.testCase.SbuscribeForProductCase"></class><!-- 认购流程案例 -->
+			<class name="bn.test.smlcs.testCase.ZhuanJieShaoCase"></class><!-- 转介绍案例 -->
 		</classes>
 	</test>
 
