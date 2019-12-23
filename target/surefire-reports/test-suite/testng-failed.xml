@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [test-suite]">
+  <listeners>
+    <listener class-name="bn.test.smlcs.report.ZTestReport"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="tests(failed)">
+    <classes>
+      <class name="bn.test.smlcs.testCase.ZhuanJieShaoCase">
+        <methods>
+          <include name="ZhuanJieShaoCase1"/>
+          <include name="befor"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- bn.test.smlcs.testCase.ZhuanJieShaoCase -->
+      <class name="bn.test.smlcs.testCase.MyApprovalCase">
+        <methods>
+          <include name="MyApproval1"/>
+          <include name="befor"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- bn.test.smlcs.testCase.MyApprovalCase -->
+      <class name="bn.test.smlcs.testCase.ProductionCase">
+        <methods>
+          <include name="productionCase3"/>
+          <include name="quit"/>
+          <include name="befor"/>
+        </methods>
+      </class> <!-- bn.test.smlcs.testCase.ProductionCase -->
+      <class name="bn.test.smlcs.testCase.SbuscribeForProductCase">
+        <methods>
+          <include name="testCase1"/>
+          <include name="quit"/>
+          <include name="testCase2"/>
+          <include name="myOrder_orderCancelCase"/>
+          <include name="befor"/>
+        </methods>
+      </class> <!-- bn.test.smlcs.testCase.SbuscribeForProductCase -->
+      <class name="bn.test.smlcs.testCase.DaoQiBianGengCase">
+        <methods>
+          <include name="quit"/>
+          <include name="daoQiBianGengCase1"/>
+          <include name="befor"/>
+        </methods>
+      </class> <!-- bn.test.smlcs.testCase.DaoQiBianGengCase -->
+      <class name="bn.test.smlcs.testCase.MyRedeemCase">
+        <methods>
+          <include name="befor"/>
+          <include name="myRedeemCase1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- bn.test.smlcs.testCase.MyRedeemCase -->
+    </classes>
+  </test> <!-- tests(failed) -->
+</suite> <!-- Failed suite [test-suite] -->

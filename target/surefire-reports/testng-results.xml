@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="test-suite" duration-ms="324701" started-at="2019-12-23T07:25:12Z" finished-at="2019-12-23T07:30:36Z">
+    <groups>
+    </groups>
+    <test name="tests" duration-ms="324701" started-at="2019-12-23T07:25:12Z" finished-at="2019-12-23T07:30:36Z">
+      <class name="bn.test.smlcs.testCase.HomeCase">
+        <test-method status="PASS" signature="befor()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="befor" is-config="true" duration-ms="14912" started-at="2019-12-23T07:25:12Z" finished-at="2019-12-23T07:25:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befor -->
+        <test-method status="PASS" signature="clickDaibanrenwu()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="clickDaibanrenwu" duration-ms="86900" started-at="2019-12-23T07:25:27Z" description="点击待办任务案例" finished-at="2019-12-23T07:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickDaibanrenwu -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="quit" is-config="true" duration-ms="1144" started-at="2019-12-23T07:26:54Z" finished-at="2019-12-23T07:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="befor()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="befor" is-config="true" duration-ms="13855" started-at="2019-12-23T07:26:55Z" finished-at="2019-12-23T07:27:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befor -->
+        <test-method status="PASS" signature="myApproval()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="myApproval" duration-ms="35445" started-at="2019-12-23T07:27:09Z" description="点击我的审批案例" finished-at="2019-12-23T07:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myApproval -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="quit" is-config="true" duration-ms="1199" started-at="2019-12-23T07:27:44Z" finished-at="2019-12-23T07:27:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="befor()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="befor" is-config="true" duration-ms="70716" started-at="2019-12-23T07:27:45Z" finished-at="2019-12-23T07:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befor -->
+        <test-method status="PASS" signature="riLiCase()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="riLiCase" duration-ms="36320" started-at="2019-12-23T07:28:56Z" description="日历案例" finished-at="2019-12-23T07:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- riLiCase -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="quit" is-config="true" duration-ms="1101" started-at="2019-12-23T07:29:32Z" finished-at="2019-12-23T07:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="befor()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="befor" is-config="true" duration-ms="13660" started-at="2019-12-23T07:29:33Z" finished-at="2019-12-23T07:29:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befor -->
+        <test-method status="PASS" signature="zhuanFaZhuShou()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="zhuanFaZhuShou" duration-ms="48343" started-at="2019-12-23T07:29:47Z" description="点击转发助手案例" finished-at="2019-12-23T07:30:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zhuanFaZhuShou -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:bn.test.smlcs.testCase.HomeCase@668bc3d5]" name="quit" is-config="true" duration-ms="1059" started-at="2019-12-23T07:30:35Z" finished-at="2019-12-23T07:30:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- bn.test.smlcs.testCase.HomeCase -->
+    </test> <!-- tests -->
+  </suite> <!-- test-suite -->
+</testng-results>

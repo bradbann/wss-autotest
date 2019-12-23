@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="207.01" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="wss-autotest"/>
+    <property name="PWD" value="/Users/zhaodong/Documents/AutoTestTools/tomcat/apache-tomcat-7.0.75_2/bin"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="/Users/zhaodong/.jenkins"/>
+    <property name="PATH" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin:/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9/bin:/Users/zhaodong/Documents/AutoTestTools/android/android_sdk/android-sdk-macosx/tools:/Users/zhaodong/Documents/AutoTestTools/android/android_sdk/android-sdk-macosx/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:/usr/local/mysql/bin"/>
+    <property name="https.proxyHost" value="127.0.0.1"/>
+    <property name="HUDSON_SERVER_COOKIE" value="5e3f39d5e95b2a72"/>
+    <property name="POM_ARTIFACTID" value="wss-autotest"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="TERM_PROGRAM" value="Apple_Terminal"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="TERM_SESSION_ID" value="2ACE1BD9-D077-4688-B6EF-CC084B80859B"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="wss-autotest"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="JAVA_MAIN_CLASS_84158" value="org.apache.catalina.startup.Bootstrap"/>
+    <property name="http.proxyPort" value="63890"/>
+    <property name="user.name" value="zhaodong"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="SECURITYSESSIONID" value="186a8"/>
+    <property name="user.language" value="zh"/>
+    <property name="JOB_BASE_NAME" value="wss-autotest"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://zhaodong/jenkins/job/wss-autotest/25/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#25"/>
+    <property name="TMPDIR" value="/var/folders/m9/ny8kp1cd3dx20qd93_nrd5gw0000gn/T/"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
+    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="211bb4f08dd9e93cd9ab4ab86defa0bb4745d2f1"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="XPC_FLAGS" value="0x0"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="TERM" value="xterm-256color"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="BUILD_ID" value="25"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="SHELL" value="/bin/bash"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="CN"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="10.14.3"/>
+    <property name="https.proxyPort" value="63890"/>
+    <property name="JAVA_SERVLET" value="/Users/zhaodong/Documents/AutoTestTools/tomcat/apache-tomcat-7.0.75"/>
+    <property name="RUN_DISPLAY_URL" value="http://zhaodong/jenkins/job/wss-autotest/25/display/redirect"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="6146b2b5631f7d75325826b680a8358cca1f1a0d"/>
+    <property name="JOB_DISPLAY_URL" value="http://zhaodong/jenkins/job/wss-autotest/display/redirect"/>
+    <property name="SHLVL" value="2"/>
+    <property name="_" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/java"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="JAVA_HOME" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="LOGNAME" value="zhaodong"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="HOME" value="/Users/zhaodong"/>
+    <property name="POM_GROUPID" value="test"/>
+    <property name="user.home" value="/Users/zhaodong"/>
+    <property name="BUILD_TAG" value="jenkins-wss-autotest-25"/>
+    <property name="JENKINS_SERVER_COOKIE" value="5e3f39d5e95b2a72"/>
+    <property name="HUDSON_URL" value="http://zhaodong/jenkins/"/>
+    <property name="XPC_SERVICE_NAME" value="0"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="/Users/zhaodong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="Apple_PubSub_Socket_Render" value="/private/tmp/com.apple.launchd.sFALcPa7WE/Render"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9"/>
+    <property name="java.class.path" value="/Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-agent-1.12-alpha-1.jar:/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar:/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main /Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9 /Users/zhaodong/Documents/AutoTestTools/tomcat/apache-tomcat-7.0.75_2/webapps/jenkins/WEB-INF/lib/remoting-3.27.jar /Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.12-alpha-1.jar /Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12-alpha-1.jar 60056"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PATH+JDK" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9"/>
+    <property name="java.io.tmpdir" value="/var/folders/m9/ny8kp1cd3dx20qd93_nrd5gw0000gn/T/"/>
+    <property name="HUDSON_HOME" value="/Users/zhaodong/.jenkins"/>
+    <property name="PATH+MAVEN" value="/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9/bin"/>
+    <property name="BUILD_URL" value="http://zhaodong/jenkins/job/wss-autotest/25/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="http.proxyHost" value="127.0.0.1"/>
+    <property name="SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.vqHQkE2CIY/Listeners"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.ext.dirs" value="/Users/zhaodong/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="__CF_USER_TEXT_ENCODING" value="0x1F5:0x19:0x34"/>
+    <property name="user.dir" value="/Users/zhaodong/Documents/AutoTestTools/workspace/wss-autotest"/>
+    <property name="JOB_URL" value="http://zhaodong/jenkins/job/wss-autotest/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="MAVEN_HOME" value="/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="25"/>
+    <property name="ANDROID_HOME" value="/Users/zhaodong/Documents/AutoTestTools/android/android_sdk/android-sdk-macosx"/>
+    <property name="JENKINS_URL" value="http://zhaodong/jenkins/"/>
+    <property name="TERM_PROGRAM_VERSION" value="421.1"/>
+    <property name="GIT_BRANCH" value="origin/master"/>
+    <property name="GIT_COMMIT" value="6146b2b5631f7d75325826b680a8358cca1f1a0d"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="LANG" value="zh_CN.UTF-8"/>
+    <property name="maven3.interceptor" value="/Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.12-alpha-1.jar"/>
+    <property name="WORKSPACE" value="/Users/zhaodong/.jenkins/workspace/wss-autotest"/>
+    <property name="maven3.interceptor.common" value="/Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12-alpha-1.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="USER" value="zhaodong"/>
+    <property name="GIT_URL" value="https://github.com/ZhaoDong1987/wss-autotest.git/"/>
+  </properties>
+  <testcase name="clickDaibanrenwu" classname="bn.test.smlcs.testCase.HomeCase" time="86.901"/>
+  <testcase name="myApproval" classname="bn.test.smlcs.testCase.HomeCase" time="35.445"/>
+  <testcase name="riLiCase" classname="bn.test.smlcs.testCase.HomeCase" time="36.321"/>
+  <testcase name="zhuanFaZhuShou" classname="bn.test.smlcs.testCase.HomeCase" time="48.343"/>
+</testsuite>
