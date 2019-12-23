@@ -33,9 +33,9 @@ public class MyRedeemCase {
 		loginStep = new LoginStep(driver);
 		homeStep = new HomeStep(driver);
 		myRedeemStep = new MyRedeemStep(driver);
-		loginStep.unifyLoginFunction("zhaodong");
+		loginStep.unifyLoginFunction("zhaod002");
 		homeStep.clickWoyaoshuhui();
-		myRedeemStep.inputCustomerSearchBox("测试六零");
+		myRedeemStep.inputCustomerSearchBox("测试六一");
 		myRedeemStep.clickCustomer();
 		myRedeemStep.clickRedeemProduct();
 		myRedeemStep.clickPublicDate();

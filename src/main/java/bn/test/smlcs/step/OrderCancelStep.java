@@ -1,13 +1,9 @@
 package bn.test.smlcs.step;
 
-import java.time.temporal.ChronoUnit;
-
 import bn.test.smlcs.page.OrderCancelPage;
 import bn.test.smlcs.util.PageInit;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.WithTimeout;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 /**
  * 订单撤销
@@ -39,10 +35,10 @@ public class OrderCancelStep extends BaseStep {
 		initElement(orderCancelPage.confirmCancel).click();
 	}
 	
-	/**订单撤销成功toast*/
-	@WithTimeout(time=10,chronoUnit=ChronoUnit.SECONDS)
-	@iOSXCUITFindBy(accessibility = "订单撤销成功")
-	public MobileElement cancelSuccessToast;
+//	/**订单撤销成功toast*/
+//	@WithTimeout(time=10,chronoUnit=ChronoUnit.SECONDS)
+//	@iOSXCUITFindBy(accessibility = "订单撤销成功")
+//	public MobileElement cancelSuccessToast;
 	
 	/**验证最后的弹出撤销成功的toast*/
 	public boolean result(){

@@ -88,6 +88,45 @@ public class MobileCommonUtil {
 		slide(driver, x1,y1 , x2, y1);
 	}
 	
+	/**
+	 * 获取元素坐标高度
+	 * @param driver
+	 * @param element
+	 * @return
+	 */
+	public static int getElementPointY(AppiumDriver<MobileElement> driver,MobileElement element){
+		int y = element.getCenter().y;
+		return y;
+	}
+	
+	/**
+	 * 获取元素坐标宽度
+	 * @param driver
+	 * @param element
+	 * @return
+	 */
+	public static int getElementPointX(AppiumDriver<MobileElement> driver,MobileElement element){
+		int x = element.getCenter().x;
+		return x;
+	}
+	
+	@SuppressWarnings("rawtypes")
+	public static void tapPoint(AppiumDriver<MobileElement> driver,int x,int y){
+		TouchAction action = new TouchAction(driver);
+		PointOption option1 = PointOption.point(x,y);
+		action.tap(option1).release().perform();;
+		
+	}
+	
+	@SuppressWarnings("rawtypes")
+	public static void pressPoint(AppiumDriver<MobileElement> driver,int x,int y){
+		TouchAction action = new TouchAction(driver);
+		PointOption option1 = PointOption.point(x,y);
+		action.tap(option1).release().perform();
+//		action.press(option1).perform().release();
+		
+	}
+	
 	
 	/**
 	 * 滑动方法-从下往上滑，从屏幕十分之九滑动到十分之一处

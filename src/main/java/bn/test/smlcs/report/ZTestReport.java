@@ -81,7 +81,8 @@ public class ZTestReport extends TestListenerAdapter implements IReporter {
 		
 		super.onTestFailure(tr);
 		try {
-			String path= ScreenShot.errorScreenshot();
+			String path= null;
+			path = ScreenShot.errorScreenshot();
 //			picturePath = path;
 			picturesPath.add(path);
 		} catch (IOException e) {

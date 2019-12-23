@@ -35,15 +35,17 @@ public class MyApprovalCase {
 		loginStep = new LoginStep(driver);
 		homeStep = new HomeStep(driver);
 		myApprovalStep = new MyApprovalStep(driver);
-		long start = System.currentTimeMillis(); // 获取开始时间
-		loginStep.userPasswordLogin("zhaod002", "q");
+//		long start = System.currentTimeMillis(); // 获取开始时间
+//		loginStep.userPasswordLogin("zhaod002", "q");
+		loginStep.unifyLoginFunction("zhaod002");
+		
 		homeStep.clickWodeshenpi();
 		String text = myApprovalStep.getTtile();
 		System.out.println(text);
 		boolean b = myApprovalStep.isEmptyList();
 		Assert.assertEquals(b, false);
-		long end = System.currentTimeMillis(); // 获取结束时间
-		System.out.println("执行案例耗时： " + (end - start) + "ms");
+//		long end = System.currentTimeMillis(); // 获取结束时间
+//		System.out.println("执行案例耗时： " + (end - start) + "ms");
 
 	}
 	

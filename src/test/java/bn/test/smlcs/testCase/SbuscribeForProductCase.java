@@ -46,7 +46,7 @@ public class SbuscribeForProductCase {
 		ordersFlowStep = new OrdersFlowStep(driver);
 		loginStep.unifyLoginFunction("zhaodong");
 		homeStep.clickWoyaorengou();
-		mySubscribeStep.inputSearchBox("测试四三");
+		mySubscribeStep.inputSearchBox("测试六六");
 		mySubscribeStep.clickCustomer();
 		customerDeailStep.clickSelectAccount();
 		ordersFlowStep.clickFirstAccount();
@@ -78,7 +78,7 @@ public class SbuscribeForProductCase {
 		ordersFlowStep = new OrdersFlowStep(driver);
 		loginStep.unifyLoginFunction("zhaodong");
 		homeStep.clickWoyaorengou();
-		mySubscribeStep.inputSearchBox("测试四三");
+		mySubscribeStep.inputSearchBox("测试六六");
 		mySubscribeStep.clickCustomer();
 		customerDeailStep.clickSelectAccount();
 		ordersFlowStep.clickFirstAccount();

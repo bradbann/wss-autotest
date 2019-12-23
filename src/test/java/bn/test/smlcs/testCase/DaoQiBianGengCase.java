@@ -26,6 +26,7 @@ public class DaoQiBianGengCase {
 	private HomeStep homeStep;
 	private DaoQiBianGengStep daoQiBianStep;
 	
+	
 	@Test(description="到期变更-正向案例")
 	public void daoQiBianGengCase1(){
 		loginStep = new LoginStep(driver);
@@ -44,6 +45,30 @@ public class DaoQiBianGengCase {
 		Assert.assertEquals(daoQiBianStep.getSuccessText(), "恭喜您!到期转换成功 ");
 		
 	}
+	
+	//, dependsOnMethods="daoQiBianGengCase1"
+	@Test(description="到期变更撤销订单-正向案例" , dependsOnMethods="daoQiBianGengCase1")
+	public void daoQiBianGengCase2(){
+		loginStep = new LoginStep(driver);
+		homeStep = new HomeStep(driver);
+		daoQiBianStep = new DaoQiBianGengStep(driver);
+		loginStep.unifyLoginFunction("zhaodong");
+		homeStep.clickDaoQiBianGeng();
+		daoQiBianStep.clickSearchField();
+		daoQiBianStep.inputSearchPageCustomer("测试六四");
+		daoQiBianStep.clickDaiShangChuanYingXiang();
+		daoQiBianStep.clickDaiShenHe();
+		daoQiBianStep.clickDaiShenPi();
+		daoQiBianStep.clickDaiXiuGai();
+		daoQiBianStep.clickConfirm();
+		daoQiBianStep.clickFirstOne();
+		daoQiBianStep.clickCancelChange();
+		daoQiBianStep.inputCause();
+		daoQiBianStep.clickConfirmCancel();
+		Assert.assertTrue(daoQiBianStep.result());
+		
+	}
+	
 	
 	@BeforeMethod
 	public void befor() throws MalformedURLException {
