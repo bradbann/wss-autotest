@@ -32,7 +32,7 @@ public class HeTongYiJiaoCase {
 		loginStep = new LoginStep(driver);
 		homeStep = new HomeStep(driver);
 		heTongYiJiaoStep = new HeTongYiJiaoStep(driver);
-		loginStep.unifyLoginFunction("zhaodong");
+		loginStep.unifyLoginFunction("zhaod002");
 		homeStep.clickHeTongYiJiao();
 		heTongYiJiaoStep.clickFirstContract();
 		heTongYiJiaoStep.clickConfirmBtn();

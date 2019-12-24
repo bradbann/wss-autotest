@@ -68,9 +68,19 @@ public class HeTongYiJiaoStep extends BaseStep {
 	/** 确认或拒绝后-获取合同数量*/
 	public int getCount(){
 		if (isExistData) {
-			MobileCommonUtil.sleep(2000);
-			afterContracts = heTongYiJiaoPage.contracts.size();
-			System.out.println("afterContracts: "+afterContracts);	
+//			MobileCommonUtil.sleep(2000);
+			for (int i = 0; i < 10; i++) {
+				int y = MobileCommonUtil.getElementPointY(driver, heTongYiJiaoPage.firstOne);
+				System.out.println("y: " + y);
+				if (y == 119) {
+					afterContracts = heTongYiJiaoPage.contracts.size();
+					System.out.println("afterContracts: " + afterContracts);
+					break;
+				} 
+				MobileCommonUtil.sleep(1000);
+			}
+			
+				
 		}
 		
 		return afterContracts;

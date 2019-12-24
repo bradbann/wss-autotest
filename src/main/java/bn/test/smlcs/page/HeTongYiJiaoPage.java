@@ -20,6 +20,10 @@ public class HeTongYiJiaoPage {
 	@iOSXCUITFindBy(className = "XCUIElementTypeCell")
 	public List<MobileElement> contracts;
 	
+	/**合同列表第1条*/
+	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeCell[1]")
+	public MobileElement firstOne;
 	
 	/** 确认按钮 */
 	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)

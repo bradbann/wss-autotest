@@ -60,7 +60,7 @@ public class SbuscribeForProductCase {
 		ordersFlowStep.clickNoCheckBox();
 		ordersFlowStep.selectTuiJianType();
 		ordersFlowStep.clickFinishOrdersBtn();
-		ordersFlowStep.clickConfirmBtn();
+//		ordersFlowStep.clickConfirmBtn();
 		Assert.assertTrue(ordersFlowStep.isSuccessful());
 		
 		
