@@ -7,6 +7,7 @@
 
 	<listeners>
 		<listener class-name="bn.test.smlcs.report.ZTestReport" />
+		<listener class-name="bn.test.smlcs.util.TestListenner" />
 	</listeners>
 
 

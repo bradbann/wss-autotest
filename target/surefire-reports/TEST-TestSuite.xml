@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="32.753" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="1,607.901" tests="21" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="JOB_NAME" value="wss-autotest"/>
@@ -14,7 +14,7 @@
     <property name="os.name" value="Mac OS X"/>
     <property name="TERM_PROGRAM" value="Apple_Terminal"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes"/>
-    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
     <property name="TERM_SESSION_ID" value="2ACE1BD9-D077-4688-B6EF-CC084B80859B"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="POM_DISPLAYNAME" value="wss-autotest"/>
@@ -27,11 +27,11 @@
     <property name="SECURITYSESSIONID" value="186a8"/>
     <property name="user.language" value="zh"/>
     <property name="JOB_BASE_NAME" value="wss-autotest"/>
-    <property name="RUN_CHANGES_DISPLAY_URL" value="http://zhaodong/jenkins/job/wss-autotest/29/display/redirect?page=changes"/>
-    <property name="BUILD_DISPLAY_NAME" value="#29"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://zhaodong/jenkins/job/wss-autotest/36/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#36"/>
     <property name="TMPDIR" value="/var/folders/m9/ny8kp1cd3dx20qd93_nrd5gw0000gn/T/"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
-    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="1c9b4c9a7223cc1d4f731f71ff0db6074c89879e"/>
+    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="ac000993b8a6e179a16cef75aece122173913e6a"/>
     <property name="java.version" value="1.8.0_111"/>
     <property name="XPC_FLAGS" value="0x0"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
@@ -39,7 +39,7 @@
     <property name="NODE_NAME" value="master"/>
     <property name="TERM" value="xterm-256color"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="BUILD_ID" value="29"/>
+    <property name="BUILD_ID" value="36"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -54,12 +54,12 @@
     <property name="os.version" value="10.14.3"/>
     <property name="https.proxyPort" value="63890"/>
     <property name="JAVA_SERVLET" value="/Users/zhaodong/Documents/AutoTestTools/tomcat/apache-tomcat-7.0.75"/>
-    <property name="RUN_DISPLAY_URL" value="http://zhaodong/jenkins/job/wss-autotest/29/display/redirect"/>
+    <property name="RUN_DISPLAY_URL" value="http://zhaodong/jenkins/job/wss-autotest/36/display/redirect"/>
     <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
     <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
     <property name="path.separator" value=":"/>
     <property name="java.vm.version" value="25.111-b14"/>
-    <property name="GIT_PREVIOUS_COMMIT" value="ac000993b8a6e179a16cef75aece122173913e6a"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="f5c32a21f96d7e3c9c690c0d5d4599fbff3699ec"/>
     <property name="JOB_DISPLAY_URL" value="http://zhaodong/jenkins/job/wss-autotest/display/redirect"/>
     <property name="SHLVL" value="2"/>
     <property name="_" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/java"/>
@@ -72,7 +72,7 @@
     <property name="HOME" value="/Users/zhaodong"/>
     <property name="POM_GROUPID" value="test"/>
     <property name="user.home" value="/Users/zhaodong"/>
-    <property name="BUILD_TAG" value="jenkins-wss-autotest-29"/>
+    <property name="BUILD_TAG" value="jenkins-wss-autotest-36"/>
     <property name="JENKINS_SERVER_COOKIE" value="5e3f39d5e95b2a72"/>
     <property name="HUDSON_URL" value="http://zhaodong/jenkins/"/>
     <property name="XPC_SERVICE_NAME" value="0"/>
@@ -86,7 +86,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="maven.home" value="/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9"/>
     <property name="java.class.path" value="/Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-agent-1.12-alpha-1.jar:/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar:/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9/conf/logging"/>
-    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main /Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9 /Users/zhaodong/Documents/AutoTestTools/tomcat/apache-tomcat-7.0.75_2/webapps/jenkins/WEB-INF/lib/remoting-3.27.jar /Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.12-alpha-1.jar /Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12-alpha-1.jar 62823"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main /Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9 /Users/zhaodong/Documents/AutoTestTools/tomcat/apache-tomcat-7.0.75_2/webapps/jenkins/WEB-INF/lib/remoting-3.27.jar /Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.12-alpha-1.jar /Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12-alpha-1.jar 62436"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="PATH+JDK" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin"/>
     <property name="java.vm.specification.version" value="1.8"/>
@@ -96,7 +96,7 @@
     <property name="java.io.tmpdir" value="/var/folders/m9/ny8kp1cd3dx20qd93_nrd5gw0000gn/T/"/>
     <property name="HUDSON_HOME" value="/Users/zhaodong/.jenkins"/>
     <property name="PATH+MAVEN" value="/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9/bin"/>
-    <property name="BUILD_URL" value="http://zhaodong/jenkins/job/wss-autotest/29/"/>
+    <property name="BUILD_URL" value="http://zhaodong/jenkins/job/wss-autotest/36/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="http.proxyHost" value="127.0.0.1"/>
     <property name="SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.vqHQkE2CIY/Listeners"/>
@@ -109,12 +109,12 @@
     <property name="line.separator" value="&#10;"/>
     <property name="MAVEN_HOME" value="/Users/zhaodong/Documents/AutoTestTools/java/apache-maven-3.3.9"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="BUILD_NUMBER" value="29"/>
+    <property name="BUILD_NUMBER" value="36"/>
     <property name="ANDROID_HOME" value="/Users/zhaodong/Documents/AutoTestTools/android/android_sdk/android-sdk-macosx"/>
     <property name="JENKINS_URL" value="http://zhaodong/jenkins/"/>
     <property name="TERM_PROGRAM_VERSION" value="421.1"/>
     <property name="GIT_BRANCH" value="origin/master"/>
-    <property name="GIT_COMMIT" value="ac000993b8a6e179a16cef75aece122173913e6a"/>
+    <property name="GIT_COMMIT" value="f5c32a21f96d7e3c9c690c0d5d4599fbff3699ec"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="LANG" value="zh_CN.UTF-8"/>
     <property name="maven3.interceptor" value="/Users/zhaodong/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.12-alpha-1.jar"/>
@@ -124,5 +124,138 @@
     <property name="USER" value="zhaodong"/>
     <property name="GIT_URL" value="https://github.com/ZhaoDong1987/wss-autotest.git/"/>
   </properties>
-  <testcase name="provideContractCase1" classname="bn.test.smlcs.testCase.ProvideContractCase" time="32.753"/>
+  <testcase name="clickDaibanrenwu" classname="bn.test.smlcs.testCase.HomeCase" time="11.715">
+    <failure message="Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;}) (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: name  CONTAINS '忘记'}) (tried for 10 second(s) with 500 milliseconds interval)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at bn.test.smlcs.util.ElementOperation.getElementText(ElementOperation.java:82)
+	at bn.test.smlcs.step.LoginStep.unifyLoginFunction(LoginStep.java:105)
+	at bn.test.smlcs.testCase.HomeCase.clickDaibanrenwu(HomeCase.java:41)
+]]></failure>
+    <system-out><![CDATA[commonPage.forget是：Located by By.chained({By.IosNsPredicate: name  CONTAINS '忘记'})
+]]></system-out>
+    <system-err><![CDATA[十二月 24, 2019 12:41:23 下午 io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+信息: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="myApproval" classname="bn.test.smlcs.testCase.HomeCase" time="33.555"/>
+  <testcase name="riLiCase" classname="bn.test.smlcs.testCase.HomeCase" time="34.383"/>
+  <testcase name="zhuanFaZhuShou" classname="bn.test.smlcs.testCase.HomeCase" time="41.393">
+    <failure message="Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;}) (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: value=='转发助手'}) (tried for 10 second(s) with 500 milliseconds interval)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at bn.test.smlcs.util.ElementOperation.getElementText(ElementOperation.java:82)
+	at bn.test.smlcs.step.ZhuanFaZhuShouStep.getTitle(ZhuanFaZhuShouStep.java:25)
+	at bn.test.smlcs.testCase.HomeCase.zhuanFaZhuShou(HomeCase.java:72)
+]]></failure>
+    <system-out><![CDATA[关闭driver
+commonPage.forget是：Located by By.chained({By.IosNsPredicate: name  CONTAINS '忘记'})
+x1: 61 , y1: 209
+x2: 61 , y2: 407
+x3: 259 , y3: 407
+2
+]]></system-out>
+    <system-err><![CDATA[十二月 24, 2019 12:43:15 下午 io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+信息: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="daoQiBianGengCase1" classname="bn.test.smlcs.testCase.DaoQiBianGengCase" time="91.193"/>
+  <testcase name="daoQiBianGengCase2" classname="bn.test.smlcs.testCase.DaoQiBianGengCase" time="89.844"/>
+  <testcase name="fundPlanCase1" classname="bn.test.smlcs.testCase.FundPlanCase" time="83.743"/>
+  <testcase name="case1" classname="bn.test.smlcs.testCase.HeTongYiJiaoCase" time="63.281">
+    <failure message="Can&apos;t locate an element by this strategy: By.chained({By.IosClassChain: **/XCUIElementTypeCell[1]})" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.IosClassChain: **/XCUIElementTypeCell[1]})
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getCenter(<generated>)
+	at bn.test.smlcs.util.MobileCommonUtil.getElementPointY(MobileCommonUtil.java:98)
+	at bn.test.smlcs.step.HeTongYiJiaoStep.getCount(HeTongYiJiaoStep.java:73)
+	at bn.test.smlcs.step.HeTongYiJiaoStep.assertResult(HeTongYiJiaoStep.java:94)
+	at bn.test.smlcs.testCase.HeTongYiJiaoCase.case1(HeTongYiJiaoCase.java:39)
+]]></failure>
+    <system-out><![CDATA[关闭driver
+commonPage.forget是：Located by By.chained({By.IosNsPredicate: name  CONTAINS '忘记'})
+x1: 61 , y1: 209
+x2: 61 , y2: 407
+x3: 259 , y3: 407
+2
+text: 
+beforContracts: 1
+y: 102
+y: 173
+y: 0
+]]></system-out>
+    <system-err><![CDATA[十二月 24, 2019 12:50:08 下午 io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+信息: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="case2" classname="bn.test.smlcs.testCase.HeTongYiJiaoCase" time="34.589"/>
+  <testcase name="MyApproval1" classname="bn.test.smlcs.testCase.MyApprovalCase" time="34.9"/>
+  <testcase name="myRedeemCase1" classname="bn.test.smlcs.testCase.MyRedeemCase" time="87.723"/>
+  <testcase name="testCase1" classname="bn.test.smlcs.testCase.PosterShareCase" time="40.746"/>
+  <testcase name="productionCase1" classname="bn.test.smlcs.testCase.ProductionCase" time="48.335"/>
+  <testcase name="productionCase2" classname="bn.test.smlcs.testCase.ProductionCase" time="49.195"/>
+  <testcase name="productionCase3" classname="bn.test.smlcs.testCase.ProductionCase" time="50.531"/>
+  <testcase name="productTransformCase1" classname="bn.test.smlcs.testCase.ProductTransformCase" time="103.613"/>
+  <testcase name="myOrder_orderCancelCase" classname="bn.test.smlcs.testCase.SbuscribeForProductCase" time="95.548"/>
+  <testcase name="testCase1" classname="bn.test.smlcs.testCase.SbuscribeForProductCase" time="205.185"/>
+  <testcase name="testCase2" classname="bn.test.smlcs.testCase.SbuscribeForProductCase" time="190.999"/>
+  <testcase name="ZhuanJieShaoCase1" classname="bn.test.smlcs.testCase.ZhuanJieShaoCase" time="139.939"/>
+  <testcase name="ZhuanJieShaoCase2" classname="bn.test.smlcs.testCase.ZhuanJieShaoCase" time="77.491"/>
 </testsuite>

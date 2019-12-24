@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-test-suite">
-              <span class="suite-name border-passed">test-suite</span>
+              <span class="suite-name border-failed">test-suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-test-suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">21 methods, 3 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-test-suite" class="hide-methods failed suite-test-suite"> (hide)</a> <!-- hide-methods failed suite-test-suite -->
+                      <a href="#" panel-name="suite-test-suite" class="show-methods failed suite-test-suite"> (show)</a> <!-- show-methods failed suite-test-suite -->
+                    </span>
+                    <div class="method-list-content failed suite-test-suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.HeTongYiJiaoCase" hash-for-method="case1">case1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.HomeCase" hash-for-method="clickDaibanrenwu">clickDaibanrenwu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.HomeCase" hash-for-method="zhuanFaZhuShou">zhuanFaZhuShou</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-test-suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +126,92 @@
                     <div class="method-list-content passed suite-test-suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.ProvideContractCase" hash-for-method="provideContractCase1">provideContractCase1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.MyApprovalCase" hash-for-method="MyApproval1">MyApproval1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.ZhuanJieShaoCase" hash-for-method="ZhuanJieShaoCase1">ZhuanJieShaoCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.ZhuanJieShaoCase" hash-for-method="ZhuanJieShaoCase2">ZhuanJieShaoCase2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.HeTongYiJiaoCase" hash-for-method="case2">case2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.DaoQiBianGengCase" hash-for-method="daoQiBianGengCase1">daoQiBianGengCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.DaoQiBianGengCase" hash-for-method="daoQiBianGengCase2">daoQiBianGengCase2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.FundPlanCase" hash-for-method="fundPlanCase1">fundPlanCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.HomeCase" hash-for-method="myApproval">myApproval</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.SbuscribeForProductCase" hash-for-method="myOrder_orderCancelCase">myOrder_orderCancelCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.MyRedeemCase" hash-for-method="myRedeemCase1">myRedeemCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.ProductTransformCase" hash-for-method="productTransformCase1">productTransformCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.ProductionCase" hash-for-method="productionCase1">productionCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.ProductionCase" hash-for-method="productionCase2">productionCase2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.ProductionCase" hash-for-method="productionCase3">productionCase3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.HomeCase" hash-for-method="riLiCase">riLiCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.PosterShareCase" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.SbuscribeForProductCase" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-suite" title="bn.test.smlcs.testCase.SbuscribeForProductCase" hash-for-method="testCase2">testCase2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-test-suite -->
@@ -117,19 +226,419 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-test-suite" class="panel test-suite">
-          <div class="suite-test-suite-class-passed">
+          <div class="suite-test-suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">bn.test.smlcs.testCase.ProvideContractCase</span>
+              <img src="failed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.HomeCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="provideContractCase1">
-                  </a> <!-- provideContractCase1 -->
-                  <span class="method-name">provideContractCase1</span>
+                  <a name="clickDaibanrenwu">
+                  </a> <!-- clickDaibanrenwu -->
+                  <span class="method-name">clickDaibanrenwu</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at bn.test.smlcs.util.ElementOperation.getElementText(ElementOperation.java:82)
+	at bn.test.smlcs.step.LoginStep.unifyLoginFunction(LoginStep.java:105)
+	at bn.test.smlcs.testCase.HomeCase.clickDaibanrenwu(HomeCase.java:41)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@44be0077 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(发放合同案例-正向流程)                  </em>
+(点击待办任务案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zhuanFaZhuShou">
+                  </a> <!-- zhuanFaZhuShou -->
+                  <span class="method-name">zhuanFaZhuShou</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at bn.test.smlcs.util.ElementOperation.getElementText(ElementOperation.java:82)
+	at bn.test.smlcs.step.ZhuanFaZhuShouStep.getTitle(ZhuanFaZhuShouStep.java:25)
+	at bn.test.smlcs.testCase.HomeCase.zhuanFaZhuShou(HomeCase.java:72)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@ea9b7c6 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(点击转发助手案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-failed -->
+          <div class="suite-test-suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.HeTongYiJiaoCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="case1">
+                  </a> <!-- case1 -->
+                  <span class="method-name">case1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.IosClassChain: **/XCUIElementTypeCell[1]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getCenter(&lt;generated&gt;)
+	at bn.test.smlcs.util.MobileCommonUtil.getElementPointY(MobileCommonUtil.java:98)
+	at bn.test.smlcs.step.HeTongYiJiaoStep.getCount(HeTongYiJiaoStep.java:73)
+	at bn.test.smlcs.step.HeTongYiJiaoStep.assertResult(HeTongYiJiaoStep.java:94)
+	at bn.test.smlcs.testCase.HeTongYiJiaoCase.case1(HeTongYiJiaoCase.java:39)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@eb507b9 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 34 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosClassChain: **/XCUIElementTypeCell[1]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 36 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(合同移交-正向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-failed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.ZhuanJieShaoCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ZhuanJieShaoCase1">
+                  </a> <!-- ZhuanJieShaoCase1 -->
+                  <span class="method-name">ZhuanJieShaoCase1</span>
+                  <em>
+(外部下单流程-正向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ZhuanJieShaoCase2">
+                  </a> <!-- ZhuanJieShaoCase2 -->
+                  <span class="method-name">ZhuanJieShaoCase2</span>
+                  <em>
+(外部单撤单流程-正向流程)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.PosterShareCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase1">
+                  </a> <!-- testCase1 -->
+                  <span class="method-name">testCase1</span>
+                  <em>
+(海报分享-正向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.MyRedeemCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myRedeemCase1">
+                  </a> <!-- myRedeemCase1 -->
+                  <span class="method-name">myRedeemCase1</span>
+                  <em>
+(我要赎回-正向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.MyApprovalCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyApproval1">
+                  </a> <!-- MyApproval1 -->
+                  <span class="method-name">MyApproval1</span>
+                  <em>
+(我的审批列表为空-案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.ProductionCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productionCase1">
+                  </a> <!-- productionCase1 -->
+                  <span class="method-name">productionCase1</span>
+                  <em>
+(产品tab-股权投资类展示-正向流程)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productionCase2">
+                  </a> <!-- productionCase2 -->
+                  <span class="method-name">productionCase2</span>
+                  <em>
+(产品tab-海外类展示-正向流程)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productionCase3">
+                  </a> <!-- productionCase3 -->
+                  <span class="method-name">productionCase3</span>
+                  <em>
+(产品tab-现金管理类展示-正向流程)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.ProductTransformCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productTransformCase1">
+                  </a> <!-- productTransformCase1 -->
+                  <span class="method-name">productTransformCase1</span>
+                  <em>
+(产品转换-正向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.HomeCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myApproval">
+                  </a> <!-- myApproval -->
+                  <span class="method-name">myApproval</span>
+                  <em>
+(点击我的审批案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="riLiCase">
+                  </a> <!-- riLiCase -->
+                  <span class="method-name">riLiCase</span>
+                  <em>
+(日历案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.SbuscribeForProductCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="myOrder_orderCancelCase">
+                  </a> <!-- myOrder_orderCancelCase -->
+                  <span class="method-name">myOrder_orderCancelCase</span>
+                  <em>
+(我的订单-撤销订单案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase1">
+                  </a> <!-- testCase1 -->
+                  <span class="method-name">testCase1</span>
+                  <em>
+(内部下单流程-定期-正向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase2">
+                  </a> <!-- testCase2 -->
+                  <span class="method-name">testCase2</span>
+                  <em>
+(内部下单流程-活期-正向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.FundPlanCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fundPlanCase1">
+                  </a> <!-- fundPlanCase1 -->
+                  <span class="method-name">fundPlanCase1</span>
+                  <em>
+(资金计划-正向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.HeTongYiJiaoCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="case2">
+                  </a> <!-- case2 -->
+                  <span class="method-name">case2</span>
+                  <em>
+(合同移交-反向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-suite-class-passed -->
+          <div class="suite-test-suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">bn.test.smlcs.testCase.DaoQiBianGengCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="daoQiBianGengCase1">
+                  </a> <!-- daoQiBianGengCase1 -->
+                  <span class="method-name">daoQiBianGengCase1</span>
+                  <em>
+(到期变更-正向案例)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="daoQiBianGengCase2">
+                  </a> <!-- daoQiBianGengCase2 -->
+                  <span class="method-name">daoQiBianGengCase2</span>
+                  <em>
+(到期变更撤销订单-正向案例)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +658,17 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;bn.test.smlcs.testCase.ProvideContractCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.HomeCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.DaoQiBianGengCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.FundPlanCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.HeTongYiJiaoCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.MyApprovalCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.MyRedeemCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.PosterShareCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.ProductionCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.ProductTransformCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.SbuscribeForProductCase&quot;/&gt;
+      &lt;class name=&quot;bn.test.smlcs.testCase.ZhuanJieShaoCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- tests --&gt;
 &lt;/suite&gt; &lt;!-- test-suite --&gt;
@@ -163,7 +682,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">tests (1 class)</span>
+                <span class="test-name">tests (11 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,6 +692,14 @@
             <span class="header-content">Groups for test-suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">buyOrder</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCase2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-test-suite" class="panel">
@@ -189,16 +716,96 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(21);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'provideContractCase1')
-data.setCell(0, 2, 'bn.test.smlcs.testCase.ProvideContractCase')
-data.setCell(0, 3, 32752);
+data.setCell(0, 1, 'testCase1')
+data.setCell(0, 2, 'bn.test.smlcs.testCase.SbuscribeForProductCase')
+data.setCell(0, 3, 205185);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCase2')
+data.setCell(1, 2, 'bn.test.smlcs.testCase.SbuscribeForProductCase')
+data.setCell(1, 3, 190999);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ZhuanJieShaoCase1')
+data.setCell(2, 2, 'bn.test.smlcs.testCase.ZhuanJieShaoCase')
+data.setCell(2, 3, 139939);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'productTransformCase1')
+data.setCell(3, 2, 'bn.test.smlcs.testCase.ProductTransformCase')
+data.setCell(3, 3, 103613);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'myOrder_orderCancelCase')
+data.setCell(4, 2, 'bn.test.smlcs.testCase.SbuscribeForProductCase')
+data.setCell(4, 3, 95548);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'daoQiBianGengCase1')
+data.setCell(5, 2, 'bn.test.smlcs.testCase.DaoQiBianGengCase')
+data.setCell(5, 3, 91193);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'daoQiBianGengCase2')
+data.setCell(6, 2, 'bn.test.smlcs.testCase.DaoQiBianGengCase')
+data.setCell(6, 3, 89843);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'myRedeemCase1')
+data.setCell(7, 2, 'bn.test.smlcs.testCase.MyRedeemCase')
+data.setCell(7, 3, 87723);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'fundPlanCase1')
+data.setCell(8, 2, 'bn.test.smlcs.testCase.FundPlanCase')
+data.setCell(8, 3, 83742);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ZhuanJieShaoCase2')
+data.setCell(9, 2, 'bn.test.smlcs.testCase.ZhuanJieShaoCase')
+data.setCell(9, 3, 77491);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'case1')
+data.setCell(10, 2, 'bn.test.smlcs.testCase.HeTongYiJiaoCase')
+data.setCell(10, 3, 63281);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'productionCase3')
+data.setCell(11, 2, 'bn.test.smlcs.testCase.ProductionCase')
+data.setCell(11, 3, 50530);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'productionCase2')
+data.setCell(12, 2, 'bn.test.smlcs.testCase.ProductionCase')
+data.setCell(12, 3, 49195);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'productionCase1')
+data.setCell(13, 2, 'bn.test.smlcs.testCase.ProductionCase')
+data.setCell(13, 3, 48335);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'zhuanFaZhuShou')
+data.setCell(14, 2, 'bn.test.smlcs.testCase.HomeCase')
+data.setCell(14, 3, 41392);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testCase1')
+data.setCell(15, 2, 'bn.test.smlcs.testCase.PosterShareCase')
+data.setCell(15, 3, 40746);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'MyApproval1')
+data.setCell(16, 2, 'bn.test.smlcs.testCase.MyApprovalCase')
+data.setCell(16, 3, 34900);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'case2')
+data.setCell(17, 2, 'bn.test.smlcs.testCase.HeTongYiJiaoCase')
+data.setCell(17, 3, 34589);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'riLiCase')
+data.setCell(18, 2, 'bn.test.smlcs.testCase.HomeCase')
+data.setCell(18, 3, 34383);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'myApproval')
+data.setCell(19, 2, 'bn.test.smlcs.testCase.HomeCase')
+data.setCell(19, 3, 33554);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'clickDaibanrenwu')
+data.setCell(20, 2, 'bn.test.smlcs.testCase.HomeCase')
+data.setCell(20, 3, 11705);
 window.suiteTableData['test-suite']= { tableData: data, tableDiv: 'times-div-test-suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 26 minutes</span>
               <div id="times-div-test-suite">
               </div> <!-- times-div-test-suite -->
             </div> <!-- times-div -->
@@ -224,18 +831,294 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">bn.test.smlcs.testCase.ProvideContractCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">bn.test.smlcs.testCase.HomeCase</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforMethod</span>
+                <span class="method-name">befor</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">provideContractCase1</span>
-                <span class="method-start">3239 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickDaibanrenwu</span>
+                <span class="method-start">330379 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">35992 ms</span>
+                <span class="method-name">quit</span>
+                <span class="method-start">342230 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">343275 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">myApproval</span>
+                <span class="method-start">353973 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">387528 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">388591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">riLiCase</span>
+                <span class="method-start">398136 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">432519 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">433574 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">zhuanFaZhuShou</span>
+                <span class="method-start">441850 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">483387 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.DaoQiBianGengCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">484534 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">daoQiBianGengCase1</span>
+                <span class="method-start">551208 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">642401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">643473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">daoQiBianGengCase2</span>
+                <span class="method-start">653347 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">743191 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.FundPlanCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">744245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fundPlanCase1</span>
+                <span class="method-start">756902 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">840644 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.HeTongYiJiaoCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">841708 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">case1</span>
+                <span class="method-start">854756 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">918166 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">919242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">case2</span>
+                <span class="method-start">931697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">966286 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.MyApprovalCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">967392 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MyApproval1</span>
+                <span class="method-start">979206 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1014107 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.MyRedeemCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1015153 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">myRedeemCase1</span>
+                <span class="method-start">1023861 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1111584 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.PosterShareCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1112689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase1</span>
+                <span class="method-start">1121657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1162403 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.ProductionCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1163458 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productionCase1</span>
+                <span class="method-start">1172012 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1220347 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1221400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productionCase2</span>
+                <span class="method-start">1231251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1280446 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1281549 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productionCase3</span>
+                <span class="method-start">1290164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1340694 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.ProductTransformCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1341750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productTransformCase1</span>
+                <span class="method-start">1352410 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1456023 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.SbuscribeForProductCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1457145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">myOrder_orderCancelCase</span>
+                <span class="method-start">1467074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1562622 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1563747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase1</span>
+                <span class="method-start">1573766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1778951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1780082 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase2</span>
+                <span class="method-start">1792058 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1983057 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">bn.test.smlcs.testCase.ZhuanJieShaoCase</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">1984113 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ZhuanJieShaoCase1</span>
+                <span class="method-start">1993793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">2133732 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">befor</span>
+                <span class="method-start">2134837 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ZhuanJieShaoCase2</span>
+                <span class="method-start">2144882 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">2222373 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

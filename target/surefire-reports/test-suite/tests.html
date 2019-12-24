@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 23 17:34:41 CST 2019</td>
+<td>Started on:</td><td>Tue Dec 24 12:35:54 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>258 seconds (258590 ms)</td>
+<tr><td>Total time:</td><td>2223 seconds (2223476 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,52 +75,50 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='bn.test.smlcs.testCase.ProvideContractCase.provideContractCase1()'><b>provideContractCase1</b><br>Test class: bn.test.smlcs.testCase.ProvideContractCase<br>Test method: 发放合同案例-正向流程</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a&gt;...&lt;/a&gt; is not clickable at point (1015, 595). Other element would receive the click: &lt;html&gt;...&lt;/html&gt;
-  (Session info: chrome=79.0.3945.88)
-  (Driver info: chromedriver=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+<td title='bn.test.smlcs.testCase.HeTongYiJiaoCase.case1()'><b>case1</b><br>Test class: bn.test.smlcs.testCase.HeTongYiJiaoCase<br>Test method: 合同移交-正向案例</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.IosClassChain: **/XCUIElementTypeCell[1]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getCenter(&lt;generated&gt;)
+	at bn.test.smlcs.util.MobileCommonUtil.getElementPointY(MobileCommonUtil.java:98)
+	at bn.test.smlcs.step.HeTongYiJiaoStep.getCount(HeTongYiJiaoStep.java:73)
+	at bn.test.smlcs.step.HeTongYiJiaoStep.assertResult(HeTongYiJiaoStep.java:94)
+	at bn.test.smlcs.testCase.HeTongYiJiaoCase.case1(HeTongYiJiaoCase.java:39)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@eb507b9 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 34 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosClassChain: **/XCUIElementTypeCell[1]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578706 (5f725d1b4f0a4a..., userDataDir: /var/folders/m9/ny8kp1cd3dx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64128}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
-Session ID: 1c147d81af993bac02e4b5d4aabbf886
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at bn.test.smlcs.testCase.ProvideContractCase.provideContractCase1(ProvideContractCase.java:113)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1129387802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1129387802'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a&gt;...&lt;/a&gt; is not clickable at point (1015, 595). Other element would receive the click: &lt;html&gt;...&lt;/html&gt;
-  (Session info: chrome=79.0.3945.88)
-  (Driver info: chromedriver=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578706 (5f725d1b4f0a4a..., userDataDir: /var/folders/m9/ny8kp1cd3dx...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64128}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 79.0.3945.88, webStorageEnabled: true}
-Session ID: 1c147d81af993bac02e4b5d4aabbf886
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at bn.test.smlcs.testCase.ProvideContractCase.provideContractCase1(ProvideContractCase.java:113)
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 36 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace956856274", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace956856274'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.IosClassChain: **/XCUIElementTypeCell[1]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getCenter(&lt;generated&gt;)
+	at bn.test.smlcs.util.MobileCommonUtil.getElementPointY(MobileCommonUtil.java:98)
+	at bn.test.smlcs.step.HeTongYiJiaoStep.getCount(HeTongYiJiaoStep.java:73)
+	at bn.test.smlcs.step.HeTongYiJiaoStep.assertResult(HeTongYiJiaoStep.java:94)
+	at bn.test.smlcs.testCase.HeTongYiJiaoCase.case1(HeTongYiJiaoCase.java:39)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,41 +147,92 @@ Session ID: 1c147d81af993bac02e4b5d4aabbf886
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@eb507b9 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 34 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosClassChain: **/XCUIElementTypeCell[1]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 36 more
 </pre></div></td>
-<td>28</td>
-<td>bn.test.smlcs.testCase.ProvideContractCase@26ba2a48</td></tr>
+<td>63</td>
+<td>bn.test.smlcs.testCase.HeTongYiJiaoCase@180bc464</td></tr>
 <tr>
-<td title='bn.test.smlcs.testCase.ProvideContractCase.provideContractCase1()'><b>provideContractCase1</b><br>Test class: bn.test.smlcs.testCase.ProvideContractCase<br>Test method: 发放合同案例-正向流程</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+<td title='bn.test.smlcs.testCase.HomeCase.clickDaibanrenwu()'><b>clickDaibanrenwu</b><br>Test class: bn.test.smlcs.testCase.HomeCase<br>Test method: 点击待办任务案例</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at bn.test.smlcs.util.ElementOperation.getElementText(ElementOperation.java:82)
+	at bn.test.smlcs.step.LoginStep.unifyLoginFunction(LoginStep.java:105)
+	at bn.test.smlcs.testCase.HomeCase.clickDaibanrenwu(HomeCase.java:41)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@44be0077 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at bn.test.smlcs.util.ScreenShot.errorScreenshot(ScreenShot.java:93)
-	at bn.test.smlcs.report.ZTestReport.onTestFailure(ZTestReport.java:85)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace144467413", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace144467413'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at bn.test.smlcs.util.ScreenShot.errorScreenshot(ScreenShot.java:93)
-	at bn.test.smlcs.report.ZTestReport.onTestFailure(ZTestReport.java:85)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1388)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:633)
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace775081157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace775081157'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at bn.test.smlcs.util.ElementOperation.getElementText(ElementOperation.java:82)
+	at bn.test.smlcs.step.LoginStep.unifyLoginFunction(LoginStep.java:105)
+	at bn.test.smlcs.testCase.HomeCase.clickDaibanrenwu(HomeCase.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -206,9 +255,163 @@ Driver info: driver.version: RemoteWebDriver
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@44be0077 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosNsPredicate: name  CONTAINS &apos;忘记&apos;})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
 </pre></div></td>
-<td>32</td>
-<td>bn.test.smlcs.testCase.ProvideContractCase@26ba2a48</td></tr>
+<td>11</td>
+<td>bn.test.smlcs.testCase.HomeCase@13fee20c</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.HomeCase.zhuanFaZhuShou()'><b>zhuanFaZhuShou</b><br>Test class: bn.test.smlcs.testCase.HomeCase<br>Test method: 点击转发助手案例</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at bn.test.smlcs.util.ElementOperation.getElementText(ElementOperation.java:82)
+	at bn.test.smlcs.step.ZhuanFaZhuShouStep.getTitle(ZhuanFaZhuShouStep.java:25)
+	at bn.test.smlcs.testCase.HomeCase.zhuanFaZhuShou(HomeCase.java:72)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@ea9b7c6 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace235370598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace235370598'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;}) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at bn.test.smlcs.util.ElementOperation.getElementText(ElementOperation.java:82)
+	at bn.test.smlcs.step.ZhuanFaZhuShouStep.getTitle(ZhuanFaZhuShouStep.java:25)
+	at bn.test.smlcs.testCase.HomeCase.zhuanFaZhuShou(HomeCase.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@ea9b7c6 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 38 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosNsPredicate: value==&apos;转发助手&apos;})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;zhaodongMac.local&apos;, ip: &apos;fe80:0:0:0:86a:d386:a468:1124%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 40 more
+</pre></div></td>
+<td>41</td>
+<td>bn.test.smlcs.testCase.HomeCase@13fee20c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -218,25 +421,95 @@ Driver info: driver.version: RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='bn.test.smlcs.testCase.HomeCase.clickDaibanrenwu()'><b>clickDaibanrenwu</b><br>Test class: bn.test.smlcs.testCase.HomeCase<br>Test method: 点击待办任务案例</td>
+<td title='bn.test.smlcs.testCase.MyApprovalCase.MyApproval1()'><b>MyApproval1</b><br>Test class: bn.test.smlcs.testCase.MyApprovalCase<br>Test method: 我的审批列表为空-案例</td>
 <td></td>
-<td>54</td>
-<td>bn.test.smlcs.testCase.HomeCase@5f2050f6</td></tr>
+<td>34</td>
+<td>bn.test.smlcs.testCase.MyApprovalCase@1324409e</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.ZhuanJieShaoCase.ZhuanJieShaoCase1()'><b>ZhuanJieShaoCase1</b><br>Test class: bn.test.smlcs.testCase.ZhuanJieShaoCase<br>Test method: 外部下单流程-正向案例</td>
+<td></td>
+<td>139</td>
+<td>bn.test.smlcs.testCase.ZhuanJieShaoCase@5d624da6</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.ZhuanJieShaoCase.ZhuanJieShaoCase2()'><b>ZhuanJieShaoCase2</b><br>Test class: bn.test.smlcs.testCase.ZhuanJieShaoCase<br>Test method: 外部单撤单流程-正向流程</td>
+<td></td>
+<td>77</td>
+<td>bn.test.smlcs.testCase.ZhuanJieShaoCase@5d624da6</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.HeTongYiJiaoCase.case2()'><b>case2</b><br>Test class: bn.test.smlcs.testCase.HeTongYiJiaoCase<br>Test method: 合同移交-反向案例</td>
+<td></td>
+<td>34</td>
+<td>bn.test.smlcs.testCase.HeTongYiJiaoCase@180bc464</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.DaoQiBianGengCase.daoQiBianGengCase1()'><b>daoQiBianGengCase1</b><br>Test class: bn.test.smlcs.testCase.DaoQiBianGengCase<br>Test method: 到期变更-正向案例</td>
+<td></td>
+<td>91</td>
+<td>bn.test.smlcs.testCase.DaoQiBianGengCase@4e04a765</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.DaoQiBianGengCase.daoQiBianGengCase2()'><b>daoQiBianGengCase2</b><br>Test class: bn.test.smlcs.testCase.DaoQiBianGengCase<br>Test method: 到期变更撤销订单-正向案例</td>
+<td></td>
+<td>89</td>
+<td>bn.test.smlcs.testCase.DaoQiBianGengCase@4e04a765</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.FundPlanCase.fundPlanCase1()'><b>fundPlanCase1</b><br>Test class: bn.test.smlcs.testCase.FundPlanCase<br>Test method: 资金计划-正向案例</td>
+<td></td>
+<td>83</td>
+<td>bn.test.smlcs.testCase.FundPlanCase@735f7ae5</td></tr>
 <tr>
 <td title='bn.test.smlcs.testCase.HomeCase.myApproval()'><b>myApproval</b><br>Test class: bn.test.smlcs.testCase.HomeCase<br>Test method: 点击我的审批案例</td>
 <td></td>
-<td>34</td>
-<td>bn.test.smlcs.testCase.HomeCase@5f2050f6</td></tr>
+<td>33</td>
+<td>bn.test.smlcs.testCase.HomeCase@13fee20c</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.SbuscribeForProductCase.myOrder_orderCancelCase()'><b>myOrder_orderCancelCase</b><br>Test class: bn.test.smlcs.testCase.SbuscribeForProductCase<br>Test method: 我的订单-撤销订单案例</td>
+<td></td>
+<td>95</td>
+<td>bn.test.smlcs.testCase.SbuscribeForProductCase@2ef9b8bc</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.MyRedeemCase.myRedeemCase1()'><b>myRedeemCase1</b><br>Test class: bn.test.smlcs.testCase.MyRedeemCase<br>Test method: 我要赎回-正向案例</td>
+<td></td>
+<td>87</td>
+<td>bn.test.smlcs.testCase.MyRedeemCase@2c6a3f77</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.ProductTransformCase.productTransformCase1()'><b>productTransformCase1</b><br>Test class: bn.test.smlcs.testCase.ProductTransformCase<br>Test method: 产品转换-正向案例</td>
+<td></td>
+<td>103</td>
+<td>bn.test.smlcs.testCase.ProductTransformCase@5315b42e</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.ProductionCase.productionCase1()'><b>productionCase1</b><br>Test class: bn.test.smlcs.testCase.ProductionCase<br>Test method: 产品tab-股权投资类展示-正向流程</td>
+<td></td>
+<td>48</td>
+<td>bn.test.smlcs.testCase.ProductionCase@62043840</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.ProductionCase.productionCase2()'><b>productionCase2</b><br>Test class: bn.test.smlcs.testCase.ProductionCase<br>Test method: 产品tab-海外类展示-正向流程</td>
+<td></td>
+<td>49</td>
+<td>bn.test.smlcs.testCase.ProductionCase@62043840</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.ProductionCase.productionCase3()'><b>productionCase3</b><br>Test class: bn.test.smlcs.testCase.ProductionCase<br>Test method: 产品tab-现金管理类展示-正向流程</td>
+<td></td>
+<td>50</td>
+<td>bn.test.smlcs.testCase.ProductionCase@62043840</td></tr>
 <tr>
 <td title='bn.test.smlcs.testCase.HomeCase.riLiCase()'><b>riLiCase</b><br>Test class: bn.test.smlcs.testCase.HomeCase<br>Test method: 日历案例</td>
 <td></td>
-<td>36</td>
-<td>bn.test.smlcs.testCase.HomeCase@5f2050f6</td></tr>
+<td>34</td>
+<td>bn.test.smlcs.testCase.HomeCase@13fee20c</td></tr>
 <tr>
-<td title='bn.test.smlcs.testCase.HomeCase.zhuanFaZhuShou()'><b>zhuanFaZhuShou</b><br>Test class: bn.test.smlcs.testCase.HomeCase<br>Test method: 点击转发助手案例</td>
+<td title='bn.test.smlcs.testCase.PosterShareCase.testCase1()'><b>testCase1</b><br>Test class: bn.test.smlcs.testCase.PosterShareCase<br>Test method: 海报分享-正向案例</td>
 <td></td>
-<td>51</td>
-<td>bn.test.smlcs.testCase.HomeCase@5f2050f6</td></tr>
+<td>40</td>
+<td>bn.test.smlcs.testCase.PosterShareCase@246ae04d</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.SbuscribeForProductCase.testCase1()'><b>testCase1</b><br>Test class: bn.test.smlcs.testCase.SbuscribeForProductCase<br>Test method: 内部下单流程-定期-正向案例</td>
+<td></td>
+<td>205</td>
+<td>bn.test.smlcs.testCase.SbuscribeForProductCase@2ef9b8bc</td></tr>
+<tr>
+<td title='bn.test.smlcs.testCase.SbuscribeForProductCase.testCase2()'><b>testCase2</b><br>Test class: bn.test.smlcs.testCase.SbuscribeForProductCase<br>Test method: 内部下单流程-活期-正向案例</td>
+<td></td>
+<td>190</td>
+<td>bn.test.smlcs.testCase.SbuscribeForProductCase@2ef9b8bc</td></tr>
 </table><p>
 </body>
 </html>
