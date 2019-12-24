@@ -99,8 +99,8 @@ public class SbuscribeForProductCase {
 		
 	}
 	
-	
-	@Test(description = "我的订单-撤销订单案例",dependsOnMethods = {"testCase2"})
+	//,dependsOnMethods = {"testCase2"}
+	@Test(description = "我的订单-撤销订单案例")
 	public void myOrder_orderCancelCase() {
 		
 		loginStep = new LoginStep(driver);

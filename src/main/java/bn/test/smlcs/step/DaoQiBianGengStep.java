@@ -190,7 +190,7 @@ public class DaoQiBianGengStep extends BaseStep {
 	
 	/**验证结果，跳转到期变更页*/
 	public boolean result(){
-		return daoQiBianGengPage.title.isDisplayed();
+		return initElement(daoQiBianGengPage.title).isDisplayed();
 	}
 	
 	

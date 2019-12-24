@@ -112,7 +112,7 @@ public class ZhuanJieShaoPage {
 	
 	/**外部单-选择期限后的期限单位，如月、日、年*/
 	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
-	@iOSXCUITFindBy(iOSNsPredicate = "name= '月' or name='日' or name='年'")
+	@iOSXCUITFindBy(iOSNsPredicate = "name= '月' or name='日' or name='年' or name='天'")
 	public MobileElement deadline;
 
 }

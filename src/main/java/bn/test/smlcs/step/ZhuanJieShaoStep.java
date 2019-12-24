@@ -23,6 +23,12 @@ public class ZhuanJieShaoStep extends BaseStep {
 		
 	}
 	
+	/**输入产品名称*/
+	public void inputProductName(String prodctName){
+		initElement(zhuanJieShaoPage.search).sendKeys(prodctName);
+		initElement(zhuanJieShaoPage.keyboardSearch).click();
+	}
+	
 	/**点击第1个立即认购*/
 	public void clickBuyNow(){
 		initElement(zhuanJieShaoPage.firstBuyNow).click();

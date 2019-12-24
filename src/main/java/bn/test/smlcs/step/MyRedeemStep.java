@@ -32,11 +32,7 @@ public class MyRedeemStep extends BaseStep{
 	
 	/** 点击第一个产品*/
 	public void clickRedeemProduct(){
-//		initElement(myRedeemPage.redeemProducts);
-//		MobileCommonUtil.sleep(3000);
-//		System.out.println("可赎回产品数量： "+myRedeemPage.redeemProducts.size());
-		myRedeemPage.redeemProducts.get(0).click();
-//		initElement(myRedeemPage.redeemProducts).click();
+		initElement(myRedeemPage.productFirstOne).click();
 	}
 	
 	/**点击开放日-默认选第1个*/

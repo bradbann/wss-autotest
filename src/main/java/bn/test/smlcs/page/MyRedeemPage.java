@@ -31,6 +31,11 @@ public class MyRedeemPage {
 	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
 	@iOSXCUITFindBy(className = "XCUIElementTypeCell")
 	public List<MobileElement> redeemProducts;
+	
+	/**选择赎回产品第1条产品*/
+	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeCell[1]")
+	public MobileElement productFirstOne;
 
 	/** 金额输入框 */
 	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)

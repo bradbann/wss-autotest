@@ -42,8 +42,9 @@ public class ZhuanJieShaoCase {
 		zhuanJieShaoStep = new ZhuanJieShaoStep(driver);
 		customerDeailStep = new CustomerDetailStep(driver);
 		ordersFlowStep = new OrdersFlowStep(driver);
-		loginStep.unifyLoginFunction("zhaodong");
+		loginStep.unifyLoginFunction("zhaod002");
 		homeStep.clickZhuanjieshao();
+		zhuanJieShaoStep.inputProductName("赵小妍儿测试-银信");
 		zhuanJieShaoStep.clickBuyNow();
 		mySubscribeStep.inputSearchBox("测试七零");
 		mySubscribeStep.clickCustomer();
