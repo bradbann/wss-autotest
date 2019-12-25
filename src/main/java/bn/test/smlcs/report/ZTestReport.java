@@ -206,8 +206,11 @@ public class ZTestReport extends TestListenerAdapter implements IReporter {
 			output.close();
 			
 			if(testsFail >0 || testsSkip > 0 || testsPass > 0){
-				SendMail.sendMail("smtp.qq.com","zhaodong6092@qq.com","ibmroxffmkqdeche", "测试报告","zhaodong6092@qq.com",
-						new String[]{"zhaodong185@163.com","3509360682@qq.com"}, new String[0], new String[0], new String[]{path},new String[0],"测试报告");
+				SendMail.sendMail("smtp.qq.com","zhaodong6092@qq.com","ibmroxffmkqdeche", "iOS私募理财师-测试报告","zhaodong6092@qq.com",
+						new String[]{"zhaod002@qianhai.com.cn","3509360682@qq.com"}, new String[0], new String[0], new String[]{path},new String[0],
+						"<b>iOS私募理财师自动化案例执行结果</b>"+"<br>"+"<p>执行时间："+beginTime+"</p><p>执行案例： "+(testsPass+testsFail+testsSkip)+
+						" 条</p>"+"<p>成功案例： "+testsPass+" 条</p>"+"<p>失败案例： "+testsFail+"&nbsp;&ensp;条</p>"+"<p>跳过案例： "+testsSkip+
+						"&nbsp;&ensp;条</p>"+"<br><br><em>详情请查看附件！</em>");
 			}
 //			SendMail.sendMail(sHost, sUser, sPwd, sSubject, sFrom, sTo, sCc, sBcc, sAttachsPath, sImgs_Path, sContentFormat);
 			
