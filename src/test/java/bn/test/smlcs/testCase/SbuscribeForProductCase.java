@@ -60,7 +60,6 @@ public class SbuscribeForProductCase {
 		ordersFlowStep.clickNoCheckBox();
 		ordersFlowStep.selectTuiJianType();
 		ordersFlowStep.clickFinishOrdersBtn();
-//		ordersFlowStep.clickConfirmBtn();
 		Assert.assertTrue(ordersFlowStep.isSuccessful());
 		
 		
@@ -90,6 +89,7 @@ public class SbuscribeForProductCase {
 		ordersFlowStep.selectPublicDate();
 		ordersFlowStep.inputMoney(4300000);
 		ordersFlowStep.clickNextStep();
+		ordersFlowStep.getWeekDay();
 		ordersFlowStep.clickNoCheckBox();
 		ordersFlowStep.selectTuiJianType();
 		ordersFlowStep.clickFinishOrdersBtn();
@@ -100,7 +100,7 @@ public class SbuscribeForProductCase {
 	}
 	
 	//,dependsOnMethods = {"testCase2"}
-	@Test(description = "我的订单-撤销订单案例")
+	@Test(description = "我的订单-认购单-撤销订单案例")
 	public void myOrder_orderCancelCase() {
 		
 		loginStep = new LoginStep(driver);
@@ -110,9 +110,11 @@ public class SbuscribeForProductCase {
 		loginStep.unifyLoginFunction("zhaod002");
 		homeStep.clickMyOrder();
 		myOrderStep.clickSearchBtn();
+		myOrderStep.clickRenShenGou();
 		myOrderStep.clickDaiXiuGai();
 		myOrderStep.clickDaiBuLu();
 		myOrderStep.clickShenHeZhong();
+		myOrderStep.clickShenPiZhong();
 		myOrderStep.clickConfirm();
 		myOrderStep.clickSearchResultFristOne();
 		myOrderStep.clickOrderRevocation();

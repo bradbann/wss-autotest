@@ -31,6 +31,11 @@ public class OrdersFlowPage {
 	@WithTimeout(time = 20, chronoUnit = ChronoUnit.SECONDS)
 	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeCell[1]")
 	public MobileElement product;
+	
+	/** 产品期限 */
+	@WithTimeout(time = 20, chronoUnit = ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeCell[4]")
+	public MobileElement productDeadline;
 
 	/** 立即认购 */
 	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
@@ -71,6 +76,11 @@ public class OrdersFlowPage {
 	@iOSXCUITFindBy(accessibility="确认")
 	public MobileElement confirmBtn;
 	
+	/** 判断是否有遇节假确认弹窗*/
+	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeWindow[1]/XCUIElementTypeOther")
+	public MobileElement isConfirBtn;
+	
 	/** 点完成下单，验证是否又2次确认弹框*/
 	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
 	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeOther/XCUIElementTypeButton")
@@ -100,6 +110,11 @@ public class OrdersFlowPage {
 	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
 	@iOSXCUITFindBy(iOSNsPredicate = "type='XCUIElementTypeTextField' and rect.y=266")
 	public MobileElement recommendType;
+	
+	/**下单页到期日文本*/
+	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='到期日']/../../XCUIElementTypeOther[2]/XCUIElementTypeStaticText")
+	public MobileElement daoQiRiText;
 	
 	
 	// ==============日期插件============================================================================

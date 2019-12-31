@@ -40,6 +40,11 @@ public class MyOrderStep extends BaseStep {
 		initElement(myOrderPage.shenHeZhong).click();
 	}
 	
+	/**点击审批中*/
+	public void clickShenPiZhong(){
+		initElement(myOrderPage.shenPiZhong).click();
+	}
+	
 	/**点击确定*/
 	public void clickConfirm(){
 		initElement(myOrderPage.confirmBtn).click();
@@ -55,7 +60,25 @@ public class MyOrderStep extends BaseStep {
 		initElement(myOrderPage.orderRevocation).click();
 	}
 	
+	/**点击认申购*/
+	public void clickRenShenGou(){
+		initElement(myOrderPage.renShenGou).click();
+	}
 	
+	/**点击产品转换*/
+	public void clickProductChange(){
+		initElement(myOrderPage.productChange).click();
+	}
+	
+	/**点击赎回*/
+	public void clickRedeem(){
+		initElement(myOrderPage.redeem).click();
+	}
+	
+	/**点击自动赎回*/
+	public void clickAutoRedeem(){
+		initElement(myOrderPage.autoRedeem).click();
+	}
 	
 	
 

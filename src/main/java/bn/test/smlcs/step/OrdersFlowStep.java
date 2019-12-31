@@ -1,6 +1,9 @@
 package bn.test.smlcs.step;
 
+import java.text.ParseException;
+
 import bn.test.smlcs.page.OrdersFlowPage;
+import bn.test.smlcs.util.CommonTools;
 import bn.test.smlcs.util.IOSKeyboard;
 import bn.test.smlcs.util.MobileCommonUtil;
 import bn.test.smlcs.util.PageInit;
@@ -17,6 +20,7 @@ public class OrdersFlowStep extends BaseStep{
 	
 
 	OrdersFlowPage ordersFlowPage;
+	private String week;
 	
 	public OrdersFlowStep(AppiumDriver<MobileElement> driver) {
 		super(driver);
@@ -45,7 +49,7 @@ public class OrdersFlowStep extends BaseStep{
 	
 	/**选择产品期限-默认选第1个期限的产品*/
 	public void clickFirstProductType(){
-		initElement(ordersFlowPage.product).click();
+		initElement(ordersFlowPage.productDeadline).click();
 	}
 	
 	
@@ -84,6 +88,19 @@ public class OrdersFlowStep extends BaseStep{
 	/** 点击下一步*/
 	public void clickNextStep(){
 		initElement(ordersFlowPage.nextStep).click();
+		
+	}
+	
+	/**定期订单-获取到期日*/
+	public void getWeekDay(){
+		String text = (ordersFlowPage.daoQiRiText).getText();
+		System.out.println(text);
+		try {
+			week = CommonTools.dateToWeek(text);
+		} catch (ParseException e) {
+			
+			e.printStackTrace();
+		}
 	}
 	
 	/** 点击-是-复选框*/
@@ -113,21 +130,27 @@ public class OrdersFlowStep extends BaseStep{
 	
 	/**点击-完成下单按钮*/
 	public void clickFinishOrdersBtn(){
+		
+		
 		initElement(ordersFlowPage.finishOrdersBtn).click();
 	}
 	
 	/**点击-弹窗确认按钮*/
 	public void clickConfirmBtn(){
-		initElement(ordersFlowPage.confirmBtn).click();
+		if ("星期六".equals(week) || "星期日".equals(week)) {
+			initElement(ordersFlowPage.confirmBtn).click();
+		}
+//		MobileCommonUtil.sleep(1000);
 		if (verifySecondConfirmationBox()) {
 			initElement(ordersFlowPage.confirmBtn).click();
 		}
+		
 	}
 	
 	/**验证下单时是否有二次确认弹框*/
 	public boolean verifySecondConfirmationBox(){
 		int count = ordersFlowPage.elementsCount.size();
-		boolean b = (count > 8)? true : false;
+		boolean b = (count > 7)? true : false;
 		return b;
 	}
 	

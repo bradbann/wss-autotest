@@ -42,6 +42,11 @@ public class MyOrderPage {
 	@iOSXCUITFindBy(accessibility = "审核中")
 	public MobileElement shenHeZhong;
 	
+	/**订单状态-审批中*/
+	@WithTimeout(time=10,chronoUnit=ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(accessibility = "审批中")
+	public MobileElement shenPiZhong;
+	
 	/**订单状态-待补录*/
 	@WithTimeout(time=10,chronoUnit=ChronoUnit.SECONDS)
 	@iOSXCUITFindBy(accessibility = "待补录")
@@ -62,7 +67,25 @@ public class MyOrderPage {
 	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]")
 	public MobileElement resultFirstOne;
 	
+	/**订单类型-认申购*/
+	@WithTimeout(time=10,chronoUnit=ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(accessibility = "认申购")
+	public MobileElement renShenGou;
 	
+	/**订单类型-产品转换*/
+	@WithTimeout(time=10,chronoUnit=ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(accessibility = "产品转换")
+	public MobileElement productChange;
+	
+	/**订单类型-赎回*/
+	@WithTimeout(time=10,chronoUnit=ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(accessibility = "赎回")
+	public MobileElement redeem;
+	
+	/**订单类型-自动赎回*/
+	@WithTimeout(time=10,chronoUnit=ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(accessibility = "自动赎回")
+	public MobileElement autoRedeem;
 	
 	
 }
