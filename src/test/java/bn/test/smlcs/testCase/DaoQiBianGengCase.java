@@ -47,7 +47,7 @@ public class DaoQiBianGengCase {
 	}
 	
 	//, dependsOnMethods="daoQiBianGengCase1"
-	@Test(description="到期变更撤销订单-正向案例" , dependsOnMethods="daoQiBianGengCase1")
+	@Test(description="到期变更撤销订单-正向案例")
 	public void daoQiBianGengCase2(){
 		loginStep = new LoginStep(driver);
 		homeStep = new HomeStep(driver);
