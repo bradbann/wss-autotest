@@ -1,6 +1,7 @@
 package bn.test.smlcs.step;
 
 import bn.test.smlcs.page.CommonPage;
+import bn.test.smlcs.util.MobileCommonUtil;
 import bn.test.smlcs.util.PageInit;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -36,6 +37,17 @@ public class CommonStep extends BaseStep {
 		initElement(commonPage.my).click();
 	}
 	
+	/**等待ios顶部的加载图片消失*/
+	public void waitUploadIsNotDisplay(){
+		for (int i = 0; i < 100; i++) {
+			if ("正在进行网络连接".equals(initElement(commonPage.upload).getText())) {
+				MobileCommonUtil.sleep(1000);
+			}else {
+				break;
+			}
+		}
+		
+	}
 	
 
 	

@@ -37,13 +37,13 @@ public class HomeCase {
 		loginStep = new LoginStep(driver);
 		homeStep = new HomeStep(driver);
 		daiBanRenWuStep = new DaiBanRenWuStep(driver);
-		long start = System.currentTimeMillis(); // 获取开始时间
+//		long start = System.currentTimeMillis(); // 获取开始时间
 		loginStep.unifyLoginFunction("zhaod002");
 		homeStep.clickDaibanrenwu();
 		daiBanRenWuStep.getTitle();
 		Assert.assertEquals(daiBanRenWuStep.getTitle(), "待办任务");
-		long end = System.currentTimeMillis(); // 获取结束时间
-		System.out.println("执行案例耗时： " + (end - start) + "ms");
+//		long end = System.currentTimeMillis(); // 获取结束时间
+//		System.out.println("执行案例耗时： " + (end - start) + "ms");
 		
 	}
 

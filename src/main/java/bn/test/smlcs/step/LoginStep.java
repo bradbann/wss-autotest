@@ -27,6 +27,7 @@ public class LoginStep {
 	SetGesturePasswordPage setGesturePasswordPage;
 	HomePage homePage;
 	HomeStep homeStep;
+	CommonStep commonStep;
 
 	public LoginStep(AppiumDriver<MobileElement> driver) {
 		this.driver = driver;
@@ -35,6 +36,7 @@ public class LoginStep {
 		commonPage = new CommonPage();
 		loginUnlockStep = new LoginUnlockStep(driver);
 		setGesturePasswordStep = new SetGesturePasswordStep(driver);
+		commonStep = new CommonStep(driver);
 		homeStep = new HomeStep(driver);
 		homePage = new HomePage();
 		PageInit.initPageElement(driver, loginPage,loginUnlockPage,commonPage,homePage);
@@ -128,6 +130,7 @@ public class LoginStep {
 				
 			}
 		}
+		commonStep.waitUploadIsNotDisplay();
 		homeStep.clickIKnow();
 //		initElement(homePage.noticePopup).click();
 

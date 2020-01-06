@@ -64,6 +64,9 @@ public class CommonPage {
 	@iOSXCUITFindBy(id="设置手势密码")
 	public MobileElement setGesturePassword;
 	
-	
+	/**ios 顶部栏，加载图标，通过获取该元素文本，判断是否是该文本"正在进行网络连接"*/
+	@WithTimeout(time = 10, chronoUnit = ChronoUnit.SECONDS)
+	@iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeWindow[3]/XCUIElementTypeStatusBar/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]")
+	public MobileElement upload;
 
 }
